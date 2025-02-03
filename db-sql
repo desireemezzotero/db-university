@@ -1,0 +1,50 @@
+SELECT `date_of_birth` AS `anno_compleanno`
+FROM `students`
+WHERE YEAR(`date_of_birth`) = 1990;
+
+SELECT `name` AS `cfu`
+FROM `courses`
+WHERE `cfu` > 10;
+
+SELECT `name`, `surname`
+FROM `students`
+WHERE YEAR(`date_of_birth`) < 1995; 
+
+SELECT `name`
+FROM `courses`
+WHERE (`year`) = 1 
+AND (`period`) = 'I semestre';
+
+SELECT `hour`, `date`
+FROM `exams`
+WHERE `date` = '2020-06-20'
+AND `hour` >= '14:00:00';
+
+SELECT `name`
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
+SELECT COUNT(`id`)
+FROM `departments`;
+
+SELECT COUNT(`id`)
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+
+SELECT COUNT(*) 
+FROM `students`
+GROUP BY YEAR(`enrolment_date`);
+
+FROM `teachers`
+GROUP BY (`office_address`);
+
+SELECT COUNT(*)
+SELECT AVG(`vote`)
+FROM `exam_student`;
+
+SELECT COUNT(`head_of_department`)
+FROM `departments`
+
+
+
